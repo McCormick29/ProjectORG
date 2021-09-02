@@ -7,9 +7,10 @@ This app will allow programmers to organize, track sprints, and monitor goals. T
 - App will offer a login for users
 - User profiles will be stored for saving and modifying changes
 - App will house a place for user notes
-- App will offer a place for goals
-- App will have a time line for each project of the day
-- App will allow management access to each profile for admin capabilities 
+- App will offer a text editor for goals
+- App will have a time line for each sprint and final dead line
+- App will allow management access to each profile for admin capabilities
+- App will allow team lead to set project relevant info which will be passed down to selected users
 - App will allow further corporate logins to better communication and ticketing
 
 # App Future Functionality
