@@ -16,6 +16,6 @@ This app will allow programmers to organize, track sprints, and monitor goals. T
 # App Future Functionality
 
 - App will compile data from each profile to track performance
-- App will broaden ticketing system to track any task needing more attention
+- App will broaden ticketing system to track any task requiring more attention
 - App will house a storybook to track react components
-- App will improve on data visualization
+- App will improve on data and data visualization
