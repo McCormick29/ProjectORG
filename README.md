@@ -4,7 +4,7 @@ This app will allow programmers to organize, track sprints, and monitor goals. T
 
 # App Functionality 
 
-- App will offer a login for users
+- App will offer a login for users and admin
 - User profiles will be stored for saving and modifying changes
 - App will house a place for user notes
 - App will offer a text editor for goals
