@@ -11,7 +11,6 @@ This app will allow programmers to organize, track sprints, and monitor goals. T
 - App will have a time line for each sprint and final dead line
 - App will allow management access to each profile for admin capabilities
 - App will allow team lead to set project relevant info which will be passed down to selected users
-- App will allow further corporate logins to better communication and ticketing
 
 # App Future Functionality
 
@@ -19,3 +18,4 @@ This app will allow programmers to organize, track sprints, and monitor goals. T
 - App will broaden ticketing system to track any task requiring more attention
 - App will house a storybook to track react components
 - App will improve on data and data visualization
+- App will allow further corporate logins to better communication and ticketing
