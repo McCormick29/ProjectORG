@@ -1,6 +1,6 @@
 # ProjectORG
 
-This app will allow programmers to organize, track sprints, and monitor goals. Team manager, program manager, and higher will be able to access profiles to better judge team proficiency and improve. 
+This app will allow programmers to organize, track sprints, and monitor goals. Team manager, program manager, and higher will be able to access profiles to better judge team proficiency and areas of improvement. 
 
 # App Functionality 
 
