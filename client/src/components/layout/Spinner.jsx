@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export default () => (
+export const Spinner = () => (
   <Fragment>
     <h1>Loading...</h1>
   </Fragment>
