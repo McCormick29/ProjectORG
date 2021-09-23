@@ -20,6 +20,7 @@ import store from './store';
 import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 import { LOGOUT } from './actions/types';
+import Chart from './components/dashboard/LineGraph';
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -55,6 +56,7 @@ const App = () => {
               <PrivateRoute exact path='/profiles' component={Profiles} />
               <PrivateRoute exact path='/profile/:id' component={Profile} />
               <PrivateRoute exact path='/dashboard' component={Dashboard} />
+              <PrivateRoute exact path='/chart' component={Chart} />
               <PrivateRoute
                 exact
                 path='/create-profile'

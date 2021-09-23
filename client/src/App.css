@@ -33,6 +33,13 @@ ul {
 img {
   width: 100%;
 }
+/* Graph */
+
+.graph {
+  display: block;
+  margin: auto;
+  position: absolute;
+}
 
 /* Utilities */
 .container {
