@@ -60,7 +60,7 @@ router.post(
       linkedin,
     } = req.body;
 
-    // build profile object
+    // Build profile object
     const profileFields = {};
     profileFields.user = req.user.id;
     if (company) profileFields.company = company;

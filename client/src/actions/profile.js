@@ -8,6 +8,7 @@ import {
   GET_PROFILES,
   PROFILE_ERROR,
   UPDATE_PROFILE,
+  ADD_NUM,
 } from './types';
 
 // Get current users profile
@@ -101,6 +102,31 @@ export const createProfile =
       });
     }
   };
+
+// Add gragh data
+export const addNums = (formData) => async (dispatch) => {
+  try {
+    const res = await axios.put('/api/profile/tracker', formData);
+
+    dispatch({
+      type: UPDATE_PROFILE,
+      payload: res.data,
+    });
+
+    dispatch(setAlert('Numbers Added', 'success'));
+  } catch (err) {
+    const errors = err.response.data.errors;
+
+    if (errors) {
+      errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
+    }
+
+    dispatch({
+      type: PROFILE_ERROR,
+      payload: { msg: err.response.statusText, status: err.response.status },
+    });
+  }
+};
 
 // Add Experience
 export const addExperience = (formData, history) => async (dispatch) => {

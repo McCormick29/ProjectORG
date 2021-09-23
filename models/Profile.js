@@ -104,6 +104,14 @@ const ProfileSchema = new mongoose.Schema({
       type: String,
     },
   },
+  tracker: {
+    numComponents: {
+      type: Number,
+    },
+    timeComponents: {
+      type: Number,
+    },
+  },
   date: {
     type: Date,
     default: Date.now,

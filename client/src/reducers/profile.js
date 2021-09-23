@@ -4,6 +4,7 @@ import {
   PROFILE_ERROR,
   CLEAR_PROFILE,
   UPDATE_PROFILE,
+  ADD_NUM,
 } from '../actions/types';
 
 const initialState = {
@@ -20,6 +21,7 @@ export function profile(state = initialState, action) {
   switch (type) {
     case GET_PROFILE:
     case UPDATE_PROFILE:
+    case ADD_NUM:
       return {
         ...state,
         profile: payload,

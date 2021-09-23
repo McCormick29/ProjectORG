@@ -12,7 +12,7 @@ const Landing = ({ isAuthenticated }) => {
       <div className='dark-overlay'>
         <div className='landing-inner'>
           <h1 className='x-large'>Project ORG</h1>
-          <p className='lead'>Create a developer profile/portfolio</p>
+          <p className='lead'>Create a developer profile</p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-primary'>
               Sign Up
