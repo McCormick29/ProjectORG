@@ -1,0 +1,30 @@
+const app = new express();
+
+app.use(express.static('dist'));
+
+app.get('/vote/:answerId', (req, res) => {
+  const { query, params } = req;
+  data.answers = handleModifyAnswerVotes(
+    data.answers,
+    params.answerId,
+    +query.increment
+  );
+  res.send('OK');
+});
+
+app.get('/data', async (_req, res) => {
+  res.json(data);
+});
+
+app.get('/', async (_req, res) => {
+  const index = readFileSync(`public/index.html`, `utf8`);
+  const rendered = renderToString(<App {...data} />); //same as questions={data.questions} answers={data.answers}
+  res.send(index.replace('{{rendered}}', rendered));
+
+  // res.send(
+  //     `<h1>REACT IS EXECELLENT</h1>`
+  // )
+});
+
+app.listen(7778);
+console.log('Server is listening.');
